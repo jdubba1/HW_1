@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- For smartphone use -->
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class = "container-fluid">
+            <h1>This is a sample form.</h1>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputNickname"><b>Nickname</b></label>
+                    <input type="Nickname" class="form-control" id="exampleInputNickname" aria-describedby="NicknameHelp" placeholder="Enter Nickname">
+                    <small id="emailHelp" class="form-text text-muted">What is your preffered name?</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1"><b>Email address</b></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We won't share or sell your information.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1"><b>Password</b></label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <br>
+                <p>Gender</p>
+
+
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio1">Male</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">Female</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio3">Other</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio4">Prefer not to say</label>
+                </div>
+
+
+                <br>
+
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Security Question
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">What is your favorite type of pet?</a>
+                    <a class="dropdown-item" href="#">What is your favorite ride sharing service?</a>
+                    <a class="dropdown-item" href="#">Where do you want to work after you finish your education?</a>
+                  </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="exampleInputAnswer"><b>Answer</b></label>
+                    <input type="Answer" class="form-control" id="exampleInputAnswer" placeholder="Security Answer">
+                </div>
+                <br>
+                <p><b>Favorite Programming Languages</b></p>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline1">Haskell</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline2">PHP</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline3">Javascript</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline4">C#</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline5" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline5">C/C++</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline6" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline6">Python</label>
+                </div>
+
+
+
+                <br>
+                <br>
+                <p><b>Additional Information</b></p>
+                <p>About Me</p>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1"></label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <br>
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
